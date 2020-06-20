@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <location path="." inheritInChildApplications="false">
+    <system.webServer>
+      <handlers>
+        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+      </handlers>
+      <aspNetCore processPath="dotnet" arguments=".\FIMIIntegration.API.dll" stdoutLogEnabled="true"  stdoutLogFile=".\logs\stdout" hostingModel="InProcess" />
+	  <!--  "C:\Logs\stdout\stdout.log"-->
+    </system.webServer>
+  </location>
+</configuration>
+<!--ProjectGuid: 3a0826cc-8c21-4272-8d9d-6a5c73244937-->
